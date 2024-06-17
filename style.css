@@ -8,7 +8,7 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 6rem;
-    margin: 0px 32px;
+    margin: 0px 48px;
     font-size: 18px;
     padding-left: 16px;
 }
@@ -16,6 +16,7 @@ header {
 .logo span {
     font-weight: bold;
     font-family: "Playwrite NL", cursive;
+    margin: 16px;
 }
 
 .nav-links a {
@@ -28,10 +29,10 @@ header {
 }
 
 section {
-    margin: 48px 32px;
+    margin: 48px;
 }
 
-#home {
+#home, #education {
     display: flex;
     /* margin: 48px 32px; */
     color: rgb(0, 28, 85);
@@ -39,13 +40,16 @@ section {
 
 .greet {
     width: 50%;
-    /* border: 1px solid black; */
     padding: 32px;
 }
 
 .greet-img {
     width: 50%;
-    /* border: 1px solid black; */
+}
+
+.greet-img img {
+    height: 600px;
+    width: 100%;
 }
 
 .greet .name {
@@ -71,6 +75,7 @@ section {
     width: 44px;
     margin-right: 20px;
 }
+
 .repo {
     color: white;
     background-color: rgb(0, 28, 85);
@@ -78,16 +83,23 @@ section {
     font-size: 20px;
 }
 
-.greet-img img {
-    height: 600px;
-    width: 100%;
+.repo a {
+    text-decoration: none;
+    color: white;
 }
+
+.repo:hover {
+    background-color: rgb(0, 28, 85);
+    color: white;
+    transform: scale(1.02);
+}
+
 
 .work-detail {
     display: flex;
 }
 
-#work .title {
+#work .work-title {
     width: 100%;
     font-size: 44px;
     font-weight: bold;
@@ -148,4 +160,63 @@ footer {
 footer span {
     font-size: 24px;
     color: red;
+}
+
+.edu-img {
+    width: 50%;
+}
+
+.edu-img img {
+    height: 600px;
+    width: 100%;
+    margin-left: -30px;
+}
+
+.degree, .hsc, .ssc {
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 5px 5px 5px #d9dbdf;
+    padding-bottom: 4px;
+}
+
+.title {
+    color: rgb(0, 28, 85);
+    background-color: rgba(14, 107, 168, 0.467);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dur {
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 8px;
+}
+
+.branch {
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.edu-info {
+    width: 50%;
+    padding: 32px;
+}
+
+.edu-detail {
+    margin: 16px;
+}
+
+.edu-detail ul li{
+    margin-bottom: 8px;
+}
+
+.visit {
+    display: flex;
+    justify-content: end;
+    margin-top: -12px;
 }
