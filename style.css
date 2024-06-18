@@ -32,7 +32,7 @@ section {
     margin: 48px;
 }
 
-#home, #education, #skills {
+#home, #education, #skills, #contact, #projects, #address {
     display: flex;
     flex-wrap: wrap;
     color: rgb(0, 28, 85);
@@ -257,4 +257,78 @@ footer span {
 #skills .card:hover {
     transition: transform 0.5s;
     transform: scale(1.05);
+}
+
+.contact-img {
+    width: 50%;
+}
+
+.contact-img img {
+    height: 480px;
+    margin-left: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.contact-me {
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.contact-detail {
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-detail p {
+    font-size: 24px;
+    opacity: 0.6;
+    margin-top: 30px;
+}
+
+#address {
+    margin: 48px;
+    text-align: center;
+    padding: 48px;
+}
+
+.map {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.address-img {
+    width: 50%;
+}
+
+.address-img img {
+    width: 90%;
+    height: 500px;
+}
+
+.adr-title {
+    font-size: 36px;
+    font-weight: 500;
+    margin-top: 40px;
+}
+
+.adr {
+    font-size: 24px;
+    margin-top: 8px;
+    opacity: 0.7;
+}
+
+.map a {
+    margin-top: 48px;
+    background-color: rgb(0, 28, 85);
+    color: white;
+    font-size: 18px;
+    padding: 8px 12px;
 }
