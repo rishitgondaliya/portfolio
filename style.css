@@ -264,7 +264,7 @@ footer span {
 }
 
 .contact-img img {
-    height: 480px;
+    height: 450px;
     margin-left: 100px;
     border: 2px solid black;
     border-radius: 50%;
@@ -331,4 +331,60 @@ footer span {
     color: white;
     font-size: 18px;
     padding: 8px 12px;
+}
+
+.project-img {
+    width: 50%;
+}
+
+.pro-greet {
+    width: 50%;
+    text-align: center;
+    /* margin: auto; */
+}
+
+.pro-greet h1 {
+    font-size: 48px;
+    margin: 36px auto;
+}
+
+.pro-greet p {
+    opacity: 0.7;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 24px auto;
+}
+
+.project-img img {
+    height: 90%;
+    width: 90%;
+}
+
+.project-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.project-card .pro {
+    background-color: rgb(166, 225, 250);
+    border: 1px solid black;
+    width: 30%;
+    height: 200px;
+    margin-bottom: 32px;
+    padding: 20px;
+}
+
+.project-card .pro:hover {
+    box-shadow: 0px 8px 16px rgba(38, 43, 46, 0.3);
+}
+
+.pro-title {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.discription {
+    font-size: 18px;
 }
