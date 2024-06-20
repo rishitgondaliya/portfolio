@@ -363,7 +363,7 @@ footer span {
 .project-card {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 100px;
 }
 
@@ -381,10 +381,24 @@ footer span {
 }
 
 .pro-title {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 500;
 }
 
 .discription {
     font-size: 18px;
+}
+
+.project-card .lang i {
+    font-size: 20px;
+    margin-right: 6px;
+}
+
+.more {
+    text-align: center;
+}
+
+.more a {
+    font-size: 20px;
+    margin: 16px;
 }
