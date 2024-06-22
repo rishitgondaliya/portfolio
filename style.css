@@ -32,7 +32,7 @@ header a {
 
 .nav-links {
     display: flex;
-    transition: max-height 0.5s ease-out;
+    transition: all 0.25s linear 0s;
 }
 
 .nav-links a {
@@ -441,15 +441,84 @@ footer span {
     .nav-links.show {
         display: flex;
         max-height: 400px;
-        transition: max-height 0.5s ease-in-out;
     }
 
     #menuIcon {
         display: block;
     }
 
-    body.expanded {
-        margin-top: 400px; /* Adjust based on your menu height */
-        transition: margin-top 0.5s ease-in-out;
+    .menu-icon .fa-bars {
+        display: block;
+    }
+
+    .menu-icon .fa-times {
+        display: none;
+    }
+
+    .menu-icon.opened .fa-bars {
+        display: none;
+    }
+
+    .menu-icon.opened .fa-times {
+        display: block;
+    }
+
+    .expanded section {
+        margin-top: 300px; 
+    }
+}
+
+@media (max-width: 1168px) {    
+    .greet-img img {
+        height: 90%;
+        width: 90%;
+    }
+    
+    .greet .name {
+        font-size: 48px;
+    }
+    
+    .greet .post {
+        font-size: 28px;
+    }
+    
+    .greet .about {
+        font-size: 24px;
+    }
+
+    .social-media img {
+        height: 40px;
+        width: 40px;
+        margin-right: 16px;
+    }
+
+    .work-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dsgn {
+        font-size: 36px;
+    }
+
+    .work-info li {
+        font-size: 26px;
+    }
+
+    #work .work-title {
+        margin-bottom: -60px;
+    }
+
+    .tech-icon i {
+        font-size: 56px;
+        margin: 24px 16px;
+    }
+    
+    .tech-icon img {
+        height: 56px;
+        width: 56px;
+        margin: 16px;
     }
 }

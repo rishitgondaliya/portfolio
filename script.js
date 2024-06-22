@@ -13,9 +13,12 @@ document.querySelectorAll('.pro').forEach(div => {
     })
 })
 
-document.getElementById('menuIcon').addEventListener('click', function() {
-    var navLinks = document.getElementById('navLinks');
-    const body = document.body;
+const menuIcon = document.getElementById('menuIcon');
+const navLinks = document.getElementById('navLinks');
+const body = document.body;
+
+menuIcon.addEventListener('click', function () {
     navLinks.classList.toggle('show');
     body.classList.toggle('expanded');
+    menuIcon.classList.toggle('opened');
 });
