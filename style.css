@@ -1,6 +1,7 @@
 body {
     background: rgb(237, 249, 254);
     color: rgb(0, 28, 85);
+    margin-right: 0px;
 }
 
 header {
@@ -468,10 +469,10 @@ footer span {
     }
 }
 
-@media (max-width: 1168px) {    
+@media (max-width: 1148px) {    
     .greet-img img {
-        height: 90%;
-        width: 90%;
+        height: 95%;
+        width: 100%;
     }
     
     .greet .name {
@@ -520,5 +521,510 @@ footer span {
         height: 56px;
         width: 56px;
         margin: 16px;
+    }
+}
+
+@media (max-width: 968px) {
+    header {
+        margin: 0px 32px;
+    }
+
+    #home {
+        margin-top: 32px;
+    }
+
+    .greet-img img {
+        height: 90%;
+        width: 100%;
+        margin: 0px 5px;
+    }
+
+    .greet {
+        padding: 16px;
+    }
+    
+    .greet .name {
+        font-size: 40px;
+    }
+    
+    .greet .post {
+        font-size: 22px;
+    }
+    
+    .greet .about {
+        font-size: 18px;
+    }
+
+    .social-media img {
+        height: 36px;
+        width: 36px;
+        margin-right: 8px;
+    }
+
+    .repo {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
+    #work {
+        margin-bottom: -50px;
+    }
+    .work-info {
+        padding: 16px;
+    }
+
+    .work-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #work .work-title {
+        margin-bottom: -100px;
+        font-size: 36px;
+        margin-top: 0px;
+    }
+
+    .work-info .dsgn {
+        font-size: 30px;
+        align-self: start;
+        margin-left: 12px;
+    }
+
+    .work-info li {
+        font-size: 22px;
+    }
+
+
+    .tech-icon i {
+        font-size: 48px;
+        margin: 20px 12px;
+    }
+    
+    .tech-icon img {
+        height: 48px;
+        width: 48px;
+        margin: 12px;
+    }
+}
+
+@media (max-width: 798px) {
+    header {
+        margin: 0px 24px;
+    }
+
+    #home {
+        margin-top: 24px;
+    }
+
+    .greet-img img {
+        height: 90%;
+        width: 100%;
+        margin: 0px 5px;
+    }
+
+    .greet {
+        padding: 12px;
+    }
+    
+    .greet .name {
+        font-size: 34px;
+    }
+    
+    .greet .post {
+        font-size: 18px;
+    }
+    
+    .greet .about {
+        font-size: 18px;
+    }
+
+    .social-media img {
+        height: 32px;
+        width: 32px;
+        margin-right: 6px;
+    }
+
+    .repo {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+    #work {
+        margin-bottom: -80px;
+    }
+
+    .work-info {
+        padding: 16px;
+    }
+
+    .work-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #work .work-title {
+        margin-bottom: -110px;
+        font-size: 30px;
+        margin-top: 0px;
+    }
+
+    .work-info .dsgn {
+        font-size: 24px;
+        align-self: start;
+        margin-left: 10px;
+    }
+
+    .work-info li {
+        font-size: 18px;
+    }
+
+
+    .tech-icon i {
+        font-size: 40px;
+        margin: 16px 10px;
+    }
+    
+    .tech-icon img {
+        height: 40px;
+        width: 40px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 668px) {
+    body {
+        margin-right: 0px;
+    }
+
+    header {
+        margin: 0px 18px;
+    }
+
+    #home {
+        margin-top: 24px;
+        flex-direction: column;
+        margin-right: 0px;
+    }
+
+    .greet, .greet-img {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .greet-img img {
+        height: 550px;
+        width: 100%;
+        margin: 20px 10px;
+    }
+
+    .greet {
+        padding: 12px;
+    }
+    
+    .greet .name {
+        font-size: 40px;
+    }
+    
+    .greet .post {
+        font-size: 22px;
+    }
+    
+    .greet .about {
+        font-size: 20px;
+    }
+
+    .social-media img {
+        height: 40px;
+        width: 40px;
+        margin-right: 8px;
+    }
+
+    .repo {
+        margin-top: 24px;
+        font-size: 18px;
+    }
+
+    #work {
+        margin-right: 0px;
+        text-align: center;
+    }
+
+    .work-detail {
+        margin-bottom: -80px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .work-img {
+        width: 100%;
+        margin: -70px 0px 50px 0px;
+    }
+
+    .work-info {
+        margin-top: 120px;
+        width: 100%;
+        padding: 16px;
+    }
+
+    #work .work-title {
+        font-size: 40px;
+        margin-top: 10px;
+    }
+
+    .work-info .dsgn {
+        font-size: 32px;
+        align-self: center;
+    }
+
+    .work-info li {
+        font-size: 22px;
+    }
+
+    .tech-icon {
+        justify-content: center;
+    }
+
+    .tech-icon i {
+        font-size: 44px;
+        margin: 20px 12px;
+    }
+    
+    .tech-icon img {
+        height: 44px;
+        width: 44px;
+        margin: 12px;
+    }
+}
+
+@media (max-width: 478px) {
+    body {
+        margin-right: 0px;
+    }
+
+    header {
+        margin: 0px 12px;
+    }
+
+    .logo span {
+        font-size: 12px;
+    }
+    #home {
+        margin-top: 24px;
+        flex-direction: column;
+        margin-right: 0px;
+    }
+
+    .greet, .greet-img {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .greet-img img {
+        height: 550px;
+        width: 100%;
+        margin: -60px auto;
+    }
+
+    .greet {
+        padding: 12px;
+    }
+    
+    .greet .name {
+        font-size: 32px;
+    }
+    
+    .greet .post {
+        font-size: 22px;
+    }
+    
+    .greet .about {
+        font-size: 20px;
+    }
+
+    .social-media img {
+        height: 32px;
+        width: 32px;
+        margin-right: 8px;
+    }
+
+    .repo {
+        margin-top: 24px;
+        font-size: 16px;
+    }
+
+    #work {
+        margin-right: 0px;
+    }
+
+    .work-detail {
+        margin-bottom: -100px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .work-img {
+        width: 100%;
+        margin-top: -180px;
+    }
+
+    .work-info {
+        margin-top: 120px;
+        width: 100%;
+        padding: 16px;
+    }
+
+    #work .work-title {
+        font-size: 30px;
+        margin-top: -60px;
+    }
+
+    .work-info .dsgn {
+        font-size: 24px;
+        align-self: center;
+    }
+
+    .work-info li {
+        font-size: 18px;
+    }
+
+    .tech-icon {
+        justify-content: center;
+    }
+
+    .tech-icon i {
+        font-size: 36px;
+        margin: 20px 12px;
+    }
+    
+    .tech-icon img {
+        height: 36px;
+        width: 36px;
+        margin: 12px;
+    }
+
+    footer {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 348px) {
+    body {
+        margin-right: 0px;
+    }
+
+    header {
+        margin: 0px 12px;
+    }
+
+    .logo span {
+        font-size: 12px;
+    }
+
+    #home {
+        margin-top: 24px;
+        flex-direction: column;
+        margin-right: 0px;
+    }
+
+    .greet, .greet-img {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .greet-img img {
+        height: 550px;
+        width: 100%;
+        margin: -80px auto;
+    }
+
+    .greet {
+        padding: 12px;
+    }
+    
+    .greet .name {
+        font-size: 26px;
+    }
+    
+    .greet .post {
+        font-size: 18px;
+    }
+    
+    .greet .about {
+        font-size: 16px;
+    }
+
+    .social-media img {
+        height: 28px;
+        width: 28px;
+        margin-right: 8px;
+    }
+
+    .repo {
+        margin-top: 24px;
+        font-size: 14px;
+    }
+
+    #work {
+        margin-right: 0px;
+    }
+
+    .work-detail {
+        margin-bottom: -100px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .work-img {
+        width: 100%;
+        margin-top: -180px;
+    }
+
+    .work-info {
+        margin-top: 120px;
+        width: 100%;
+        padding: 16px;
+    }
+
+    #work .work-title {
+        font-size: 26px;
+        margin-top: -60px;
+    }
+
+    .work-info .dsgn {
+        font-size: 20px;
+        align-self: center;
+    }
+
+    .work-info li {
+        font-size: 16px;
+    }
+
+    .tech-icon {
+        justify-content: center;
+    }
+
+    .tech-icon i {
+        font-size: 28px;
+        margin: 20px 12px;
+    }
+    
+    .tech-icon img {
+        height: 28px;
+        width: 28px;
+        margin: 12px;
+    }
+
+    footer {
+        font-size: 16px;
     }
 }
