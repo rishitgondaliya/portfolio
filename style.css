@@ -1,8 +1,8 @@
 body {
     background: rgb(237, 249, 254);
     color: rgb(0, 28, 85);
-    margin-right: 0px;
-    overflow-x: hidden;
+    margin: 0px;
+    padding: 0;
 }
 
 header {
@@ -59,6 +59,10 @@ section {
     display: flex;
     flex-wrap: wrap;
     color: rgb(0, 28, 85);
+}
+
+#home, #contact {
+    max-width: fit-content;
 }
 
 .greet {
@@ -393,7 +397,6 @@ footer span {
     background-color: rgb(166, 225, 250);
     border: 1px solid black;
     width: 30%;
-    height: 200px;
     margin-bottom: 32px;
     padding: 20px;
 }
@@ -955,7 +958,7 @@ footer span {
         margin-right: 0px;
     }
 
-    .greet, .greet-img {
+    .greet, .greet-img {    
         width: 100%;
         text-align: center;
         margin: auto;
@@ -963,7 +966,7 @@ footer span {
 
     .greet-img img {
         height: 550px;
-        width: 100%;
+        width: 99%;
         margin: -60px auto;
     }
 
