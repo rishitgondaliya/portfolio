@@ -64,8 +64,8 @@ section {
     color: rgb(0, 28, 85);
 }
 
-#home, #contact {
-    max-width: fit-content;
+#home, #work, #contact {
+    max-width: 90%;
 }
 
 .greet {
