@@ -1,3 +1,3 @@
-# my-portfolio
+# My Portfolio
 
-## Visit for live demo [My Portfolio] (https://rishitgondaliya.netlify.app/)
+## Visit for live demo: [My Portfolio](https://rishitgondaliya.netlify.app/)
