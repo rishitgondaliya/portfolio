@@ -1,11 +1,8 @@
 html, body {
     background: rgb(237, 249, 254);
     color: rgb(0, 28, 85);
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    /* width: 100%;
+    height: 100%; */
 }
 
 header {
@@ -15,7 +12,6 @@ header {
     height: 6rem;
     margin: 0px 48px;
     font-size: 18px;
-    padding-left: 16px;
 }
 
 header a {
@@ -61,16 +57,13 @@ section {
 #home, #education, #skills, #contact, #projects, #address {
     display: flex;
     flex-wrap: wrap;
+    max-width: max-content;
     color: rgb(0, 28, 85);
-}
-
-#home, #work, #contact {
-    max-width: 90%;
 }
 
 .greet {
     width: 50%;
-    padding: 32px;
+    padding: 20px;
 }
 
 .greet-img {
@@ -80,6 +73,7 @@ section {
 .greet-img img {
     height: 600px;
     width: 100%;
+    padding: 20px;
 }
 
 .greet .name {
@@ -101,9 +95,9 @@ section {
 }
 
 .social-media img {
-    height: 44px;
-    width: 44px;
-    margin-right: 20px;
+    height: 54px;
+    width: 54px;
+    margin-right: 16px;
 }
 
 .repo {
@@ -124,9 +118,16 @@ section {
     transform: scale(1.02);
 }
 
-
 .work-detail {
     display: flex;
+}
+
+#work, #address {
+    overflow-x: hidden;
+}
+
+#work::-webkit-scrollbar, #address::-webkit-scrollbar {
+    display: none;
 }
 
 #work .work-title {
@@ -159,7 +160,6 @@ section {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
 }
 
 .tech-icon i {
@@ -253,7 +253,6 @@ footer span {
 #skills {
     margin: 100px;
     justify-content: space-around;
-    /* background-color: rgb(36, 36, 36); */
 }
 
 #skills .card {
@@ -293,16 +292,10 @@ footer span {
 }
 
 .contact-img img {
-    height: 450px;
+    height: calc(150px + (450 - 50)*(100vw - 320px)/(1920 - 320));
     margin-left: 100px;
     border: 2px solid black;
     border-radius: 50%;
-}
-
-.contact-me {
-    font-size: 50px;
-    font-weight: bold;
-    margin-top: 30px;
 }
 
 .contact-detail {
@@ -314,10 +307,17 @@ footer span {
     align-items: center;
 }
 
+.contact-me {
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
 .contact-detail p {
     font-size: 24px;
     opacity: 0.6;
     margin-top: 30px;
+    padding: 8px;
 }
 
 #address {
@@ -495,9 +495,9 @@ footer span {
     }
 
     .social-media img {
-        height: 40px;
-        width: 40px;
-        margin-right: 16px;
+        height: 50px;
+        width: 50px;
+        margin-right: 10px;
     }
 
     .work-info {
@@ -521,7 +521,7 @@ footer span {
 
     .tech-icon i {
         font-size: 56px;
-        margin: 24px 16px;
+        margin: 16px;
     }
     
     .tech-icon img {
@@ -564,7 +564,7 @@ footer span {
     }
 
     .greet {
-        padding: 12px;
+        padding: 10px;
     }
     
     .greet .name {
@@ -580,9 +580,9 @@ footer span {
     }
 
     .social-media img {
-        height: 36px;
-        width: 36px;
-        margin-right: 8px;
+        height: 42px;
+        width: 42px;
+        margin-right: 6px;
     }
 
     .repo {
@@ -624,7 +624,7 @@ footer span {
 
     .tech-icon i {
         font-size: 48px;
-        margin: 20px 12px;
+        margin: 12px;
     }
     
     .tech-icon img {
@@ -667,7 +667,11 @@ footer span {
 
 @media (max-width: 798px) {
     header {
-        margin: 0px 24px;
+        margin: 0px 20px;
+    }
+
+    section {
+        margin: 24px;
     }
 
     #home {
@@ -680,10 +684,6 @@ footer span {
         margin: 0px 5px;
     }
 
-    .greet {
-        /* padding: 12px; */
-    }
-    
     .greet .name {
         font-size: 34px;
     }
@@ -697,8 +697,8 @@ footer span {
     }
 
     .social-media img {
-        height: 32px;
-        width: 32px;
+        height: 38px;
+        width: 38px;
         margin-right: 6px;
     }
 
@@ -729,7 +729,7 @@ footer span {
     }
 
     .work-info .dsgn {
-        font-size: 24px;
+        font-size: 28px;
         align-self: start;
         margin-left: 10px;
     }
@@ -738,10 +738,9 @@ footer span {
         font-size: 18px;
     }
 
-
     .tech-icon i {
         font-size: 40px;
-        margin: 16px 10px;
+        margin: 10px;
     }
     
     .tech-icon img {
@@ -788,18 +787,18 @@ footer span {
 }
 
 @media (max-width: 668px) {
-    body {
-        margin-right: 0px;
+    header {
+        margin: 0px 20px;
+        font-size: 16px;
     }
 
-    header {
-        margin: 0px 18px;
+    section {
+        margin: 30px;
     }
 
     #home {
         margin-top: 24px;
         flex-direction: column;
-        margin-right: 0px;
     }
 
     .greet, .greet-img {
@@ -810,12 +809,8 @@ footer span {
 
     .greet-img img {
         height: 550px;
-        width: 100%;
+        width: 90%;
         margin: 20px 10px;
-    }
-
-    .greet {
-        /* padding: 12px; */
     }
     
     .greet .name {
@@ -831,8 +826,8 @@ footer span {
     }
 
     .social-media img {
-        height: 40px;
-        width: 40px;
+        height: 44px;
+        width: 44px;
         margin-right: 8px;
     }
 
@@ -842,7 +837,6 @@ footer span {
     }
 
     #work {
-        margin-right: 0px;
         text-align: center;
     }
 
@@ -884,7 +878,7 @@ footer span {
 
     .tech-icon i {
         font-size: 44px;
-        margin: 20px 12px;
+        margin: 12px;
     }
     
     .tech-icon img {
@@ -943,40 +937,27 @@ footer span {
 }
 
 @media (max-width: 478px) {
-    body, html {
-        margin-right: 0px;
-    }
-
     header {
         margin: 0px 12px;
-    }
-
-    .logo span {
-        font-size: 12px;
+        font-size: 15px;
     }
 
     #home {
         margin-top: 24px;
         flex-direction: column;
-        /* margin-right: 0px; */
         justify-content: center;
         align-items: center;
     }
 
     .greet, .greet-img {    
         width: 100%;
-        /* text-align: center; */
         margin: auto;
     }
 
     .greet-img img {
         height: 550px;
-        width: 99%;
+        width: 100%;
         margin: -60px auto;
-    }
-
-    .greet {
-        /* padding: 12px; */
     }
     
     .greet .name {
@@ -992,18 +973,14 @@ footer span {
     }
 
     .social-media img {
-        height: 32px;
-        width: 32px;
-        margin-right: 8px;
+        height: 34px;
+        width: 34px;
+        margin-right: 6px;
     }
 
     .repo {
         margin-top: 24px;
         font-size: 16px;
-    }
-
-    #work {
-        margin-right: 0px;
     }
 
     .work-detail {
@@ -1044,7 +1021,7 @@ footer span {
 
     .tech-icon i {
         font-size: 36px;
-        margin: 20px 12px;
+        margin: 12px;
     }
     
     .tech-icon img {
@@ -1108,10 +1085,6 @@ footer span {
 }
 
 @media (max-width: 348px) {
-    body {
-        margin-right: 0px;
-    }
-
     header {
         margin: 0px 12px;
     }
@@ -1123,7 +1096,6 @@ footer span {
     #home {
         margin-top: 24px;
         flex-direction: column;
-        margin-right: 0px;
     }
 
     .greet, .greet-img {
@@ -1136,10 +1108,6 @@ footer span {
         height: 550px;
         width: 100%;
         margin: -80px auto;
-    }
-
-    .greet {
-        padding: 12px;
     }
     
     .greet .name {
@@ -1155,18 +1123,14 @@ footer span {
     }
 
     .social-media img {
-        height: 28px;
-        width: 28px;
-        margin-right: 8px;
+        height: 32px;
+        width: 32px;
+        margin-right: 6px;
     }
 
     .repo {
         margin-top: 24px;
         font-size: 14px;
-    }
-
-    #work {
-        margin-right: 0px;
     }
 
     .work-detail {
@@ -1207,7 +1171,7 @@ footer span {
 
     .tech-icon i {
         font-size: 28px;
-        margin: 20px 12px;
+        margin: 12px;
     }
     
     .tech-icon img {
