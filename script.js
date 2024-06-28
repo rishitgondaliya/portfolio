@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Event listener for navbar toggler
-    const navbarToggler = document.querySelector('.navbar-toggler');
+    const navbarToggler = document.querySelector('.navbar-collapse');
     const mainContent = document.querySelector('#mainContent');
 
     if (navbarToggler && mainContent) {
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const isVisible = navbarCollapse.classList.contains('show');
 
             if (isVisible) {
-                mainContent.style.paddingTop = '80px'; // Adjust based on your navbar height
+                mainContent.style.paddingTop = '80px'; 
             } else {
                 mainContent.style.paddingTop = '0';
             }
