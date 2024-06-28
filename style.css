@@ -32,6 +32,9 @@ body {
     line-height: 0.7;
 }
 
+.navbar-toggler {
+    padding: 4px 6px;
+}
 section {
     margin: 48px;
 }
@@ -931,6 +934,11 @@ footer span {
         font-size: 15px;
     }
 
+    .navbar-toggler-icon {
+        height: 28px;
+        width: 28px;
+    }
+
     section {
         margin: 30px;
     }
@@ -1446,6 +1454,15 @@ footer span {
 @media (max-width: 348px) {
     .navbar {
         margin: 0px 12px;
+    }
+
+    .navbar-toggler {
+        padding: 2px 4px;
+    }
+    
+    .navbar-toggler-icon {
+        height: 24px;
+        width: 24px;
     }
 
     section {
