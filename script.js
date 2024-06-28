@@ -1,24 +1,37 @@
-AOS.init({
-    duration: 1500, // Animation duration in milliseconds
-    offset: 100,    // Offset (in pixels) from the original trigger point
-    once: false     // Animation should appear both on scroll up and down
-});
+document.addEventListener('DOMContentLoaded', function () {
+    // Initialize AOS with your desired configuration
+    AOS.init({
+        duration: 1500,
+        offset: 100,
+        once: false
+    });
 
-document.querySelectorAll('.pro').forEach(div => {
-    div.addEventListener('click', function () {
-        const url = this.getAttribute('data-url');
-        if (url) {
-            window.open(url, '_blank');
-        }
-    })
-})
+    // Event listener for .pro elements
+    document.querySelectorAll('.pro').forEach(div => {
+        div.addEventListener('click', function () {
+            const url = this.getAttribute('data-url');
+            if (url) {
+                window.open(url, '_blank');
+            }
+        });
+    });
 
-const menuIcon = document.getElementById('menuIcon');
-const navLinks = document.getElementById('navLinks');
-const body = document.body;
+    // Event listener for navbar toggler
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const mainContent = document.querySelector('#mainContent');
 
-menuIcon.addEventListener('click', function () {
-    navLinks.classList.toggle('show');
-    body.classList.toggle('expanded');
-    menuIcon.classList.toggle('opened');
+    if (navbarToggler && mainContent) {
+        navbarToggler.addEventListener('click', function () {
+            const navbarCollapse = document.querySelector('.navbar-collapse');
+            const isVisible = navbarCollapse.classList.contains('show');
+
+            if (isVisible) {
+                mainContent.style.paddingTop = '80px'; // Adjust based on your navbar height
+            } else {
+                mainContent.style.paddingTop = '0';
+            }
+        });
+    } else {
+        console.error('Navbar toggler or main content element not found.');
+    }
 });

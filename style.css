@@ -1,63 +1,49 @@
-html, body {
+html,
+body {
     background: rgb(237, 249, 254);
     color: rgb(0, 28, 85);
-    /* width: 100%;
-    height: 100%; */
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navbar {
     height: 6rem;
     margin: 0px 48px;
-    font-size: 18px;
-}
-
-header a {
-    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    z-index: 1000;
 }
 
 .logo span {
     font-weight: bold;
     font-family: "Playwrite NL", cursive;
-    margin: 16px;
+    margin: 8px;
     color: rgb(0, 28, 85);
 }
 
-#menuIcon {
-    display: none;
-    cursor: pointer;
-    margin: 16px;
-}
-
-.nav-links {
-    display: flex;
-    transition: all 0.25s linear 0s;
-}
-
-.nav-links a {
+.navbar-nav a {
     margin: 0px 8px;
     padding: 16px;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: 500;
     color: rgb(0, 28, 85);
-    text-decoration: none;
 }
 
-.nav-links a:hover {
-    background-color: rgba(0, 28, 85, 0.1);
-    border-radius: 5px;
+.navbar-nav .nav-link {
+    line-height: 0.7;
 }
 
 section {
     margin: 48px;
 }
 
-#home, #education, #skills, #contact, #projects, #address {
+#home,
+#education,
+#skills,
+#contact,
+#projects,
+#address {
     display: flex;
     flex-wrap: wrap;
-    max-width: max-content;
     color: rgb(0, 28, 85);
 }
 
@@ -122,11 +108,13 @@ section {
     display: flex;
 }
 
-#work, #address {
+#work,
+#address {
     overflow-x: hidden;
 }
 
-#work::-webkit-scrollbar, #address::-webkit-scrollbar {
+#work::-webkit-scrollbar,
+#address::-webkit-scrollbar {
     display: none;
 }
 
@@ -200,7 +188,9 @@ footer span {
     margin-left: -30px;
 }
 
-.degree, .hsc, .ssc {
+.degree,
+.hsc,
+.ssc {
     border-radius: 8px;
     margin-bottom: 20px;
     background-color: white;
@@ -239,7 +229,7 @@ footer span {
     margin: 16px;
 }
 
-.edu-detail ul li{
+.edu-detail ul li {
     margin-bottom: 8px;
     font-size: 18px;
 }
@@ -251,14 +241,15 @@ footer span {
 }
 
 #skills {
-    margin: 100px;
-    justify-content: space-around;
+    margin: 60px;
+    justify-content: space-between;
 }
 
 #skills .card {
     width: 350px;
-    margin-bottom: 30px;
-    background-color: rgb(0, 28, 85);;
+    margin: 0px auto 30px;
+    background-color: rgb(0, 28, 85);
+    ;
     text-align: center;
     color: rgb(255, 255, 255);
 }
@@ -282,84 +273,22 @@ footer span {
     margin-top: 16px;
 }
 
+#skills .card-body {
+    padding: 6px;
+}
+
+#skills .card-title {
+    margin: 4px;
+}
+
 #skills .card:hover {
     transition: transform 0.5s;
     transform: scale(1.05);
 }
 
-.contact-img {
-    width: 50%;
-}
-
-.contact-img img {
-    height: calc(150px + (450 - 50)*(100vw - 320px)/(1920 - 320));
-    margin-left: 100px;
-    border: 2px solid black;
-    border-radius: 50%;
-}
-
-.contact-detail {
-    width: 50%;
-    text-align: center;
+/* projects */
+#projects {
     padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.contact-me {
-    font-size: 50px;
-    font-weight: bold;
-    margin-top: 30px;
-}
-
-.contact-detail p {
-    font-size: 24px;
-    opacity: 0.6;
-    margin-top: 30px;
-    padding: 8px;
-}
-
-#address {
-    margin: 48px;
-    text-align: center;
-    padding: 48px;
-}
-
-.map {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.address-img {
-    width: 50%;
-}
-
-.address-img img {
-    width: 90%;
-    height: 500px;
-}
-
-.adr-title {
-    font-size: 36px;
-    font-weight: 500;
-    margin-top: 40px;
-}
-
-.adr {
-    font-size: 24px;
-    margin-top: 8px;
-    opacity: 0.7;
-}
-
-.map a {
-    margin-top: 48px;
-    background-color: rgb(0, 28, 85);
-    color: white;
-    font-size: 18px;
-    padding: 8px 12px;
 }
 
 .project-img {
@@ -369,7 +298,6 @@ footer span {
 .pro-greet {
     width: 50%;
     text-align: center;
-    /* margin: auto; */
 }
 
 .pro-greet h1 {
@@ -431,65 +359,106 @@ footer span {
     margin: 16px;
 }
 
-@media (max-width: 968px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 80px;
-        left: 0;
-        background-color: rgb(237, 249, 254);
-        padding: 10px;
-        z-index: 1000;
-        max-height: 0;
-        overflow: hidden;
-    }
-
-    .nav-links.show {
-        display: flex;
-        max-height: 400px;
-    }
-
-    #menuIcon {
-        display: block;
-    }
-
-    .menu-icon .fa-bars {
-        display: block;
-    }
-
-    .menu-icon .fa-times {
-        display: none;
-    }
-
-    .menu-icon.opened .fa-bars {
-        display: none;
-    }
-
-    .menu-icon.opened .fa-times {
-        display: block;
-    }
-
-    .expanded section {
-        margin-top: 300px; 
-    }
+/* contact */
+#contact {
+    /* align-items: center;
+    justify-content: center; */
 }
 
-@media (max-width: 1148px) {    
+.contact-img {
+    width: 50%;
+    text-align: center;
+}
+
+.contact-img img {
+    height: 75%;
+    margin: auto;
+    margin-top: 50px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.contact-detail {
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-me {
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.contact-detail p {
+    font-size: 24px;
+    opacity: 0.6;
+    margin-top: 30px;
+    padding: 8px;
+}
+
+#address {
+    margin: 48px;
+    margin-top: 0px;
+    text-align: center;
+    padding: 48px;
+    padding-top: 0;
+}
+
+.map {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.address-img {
+    width: 50%;
+}
+
+.address-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.adr-title {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.adr {
+    font-size: 24px;
+    margin-top: 12px;
+    opacity: 0.7;
+}
+
+.map a {
+    margin-top: 48px;
+    background-color: rgb(0, 28, 85);
+    color: white;
+    font-size: 18px;
+    padding: 8px 12px;
+}
+
+
+@media (max-width: 1148px) {
     .greet-img img {
         height: 95%;
         width: 100%;
     }
-    
+
     .greet .name {
         font-size: 48px;
     }
-    
+
     .greet .post {
         font-size: 28px;
     }
-    
+
     .greet .about {
         font-size: 24px;
     }
@@ -523,7 +492,7 @@ footer span {
         font-size: 56px;
         margin: 16px;
     }
-    
+
     .tech-icon img {
         height: 56px;
         width: 56px;
@@ -546,11 +515,68 @@ footer span {
     .branch {
         font-size: 16px;
     }
+
+    /* skills */
+    #skills .card {
+        width: 280px;
+    }
+
+    #skills img {
+        height: 160px;
+        width: 160px;
+    }
+
+    #skills .js img {
+        height: 130px;
+        width: 130px;
+        margin-top: 20px;
+    }
+
+    .js .card-title {
+        margin: 8px;
+    }
+
+    #skills .database img {
+        height: 140px;
+        width: 140px;
+        margin-top: 16px;
+    }
+
+    /* projects */
+    .project-card {
+        margin: 100px 20px 0px;
+    }
+
+    .project-card .pro {
+        width: 48%;
+    }
+
+    /* contact */
+    .contact-img {
+        margin-top: 50px;
+    }
+
+    .contact-img img {
+        height: 65%;
+    }
+
+    .address-img {
+        width: 50%;
+    }
+
+    .address-img img {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 @media (max-width: 968px) {
-    header {
+    .navbar {
         margin: 0px 32px;
+    }
+
+    .logo span {
+        margin: 0px;
     }
 
     #home {
@@ -566,15 +592,15 @@ footer span {
     .greet {
         padding: 10px;
     }
-    
+
     .greet .name {
         font-size: 40px;
     }
-    
+
     .greet .post {
         font-size: 22px;
     }
-    
+
     .greet .about {
         font-size: 18px;
     }
@@ -626,7 +652,7 @@ footer span {
         font-size: 48px;
         margin: 12px;
     }
-    
+
     .tech-icon img {
         height: 48px;
         width: 48px;
@@ -659,15 +685,73 @@ footer span {
         font-size: 12px;
     }
 
-    .visit a{
+    .visit a {
         font-size: 13px;
         padding: 4px 8px;
+    }
+
+    /* skills */
+    #skills .card {
+        width: 270px;
+    }
+
+    #skills img {
+        height: 150px;
+        width: 150px;
+    }
+
+    #skills .js img {
+        height: 120px;
+        width: 120px;
+        margin-top: 20px;
+    }
+
+    .js .card-title {
+        margin: 8px;
+    }
+
+    #skills .database img {
+        height: 130px;
+        width: 130px;
+        margin-top: 16px;
+    }
+
+    /* projects */
+    .project-card {
+        margin: 100px 16px 0px;
+    }
+
+    .project-card .pro {
+        padding: 16px;
+    }
+
+    /* contact */
+    .contact-img img {
+        height: 55%;
+    }
+
+    #address {
+        margin: 0 24px 24px 24px;
+        padding: 0 24px 24px 24px;
+    }
+    
+    .address-img {
+        width: 50%;
+    }
+
+    .address-img img {
+        width: 100%;
+        height: 100%;
     }
 }
 
 @media (max-width: 798px) {
-    header {
-        margin: 0px 20px;
+    .navbar {
+        margin: 20px;
+    }
+
+    .logo span {
+        font-size: 18px;
     }
 
     section {
@@ -687,11 +771,11 @@ footer span {
     .greet .name {
         font-size: 34px;
     }
-    
+
     .greet .post {
         font-size: 18px;
     }
-    
+
     .greet .about {
         font-size: 18px;
     }
@@ -742,7 +826,7 @@ footer span {
         font-size: 40px;
         margin: 10px;
     }
-    
+
     .tech-icon img {
         height: 40px;
         width: 40px;
@@ -777,19 +861,74 @@ footer span {
         font-size: 10px;
     }
 
-    .visit a{
+    .visit a {
         font-size: 11px;
     }
 
     .visit {
         margin-bottom: -8px;
     }
+
+    /* skills */
+    #skills .card {
+        width: 240px;
+    }
+
+    #skills img {
+        height: 120px;
+        width: 120px;
+    }
+
+    #skills .js img {
+        height: 100px;
+        width: 100px;
+        margin-top: 20px;
+    }
+
+    #skills .database img {
+        height: 110px;
+        width: 110px;
+    }
+
+    /* projects */
+    .project-card {
+        margin: 80px 16px 0px;
+    }
+
+    .project-card .pro {
+        padding: 16px;
+    }
+
+    /* contact */
+    .contact-img, .contact-detail {
+        height: 400px;
+    }
+
+    .contact-img img {
+        height: 75%;
+        margin-top: 20px;
+    }
+
+    .contact-me {
+        font-size: 40px;
+    }
+
+    .contact-detail p {
+        font-size: 20px;
+    }
+
+    #address {
+        margin-top: 50px;
+    }
 }
 
 @media (max-width: 668px) {
-    header {
+    .navbar {
         margin: 0px 20px;
-        font-size: 16px;
+    }
+
+    .logo span {
+        font-size: 15px;
     }
 
     section {
@@ -801,7 +940,8 @@ footer span {
         flex-direction: column;
     }
 
-    .greet, .greet-img {
+    .greet,
+    .greet-img {
         width: 100%;
         text-align: center;
         margin: auto;
@@ -812,15 +952,15 @@ footer span {
         width: 90%;
         margin: 20px 10px;
     }
-    
+
     .greet .name {
         font-size: 40px;
     }
-    
+
     .greet .post {
         font-size: 22px;
     }
-    
+
     .greet .about {
         font-size: 20px;
     }
@@ -880,7 +1020,7 @@ footer span {
         font-size: 44px;
         margin: 12px;
     }
-    
+
     .tech-icon img {
         height: 44px;
         width: 44px;
@@ -927,19 +1067,134 @@ footer span {
         font-size: 14px;
     }
 
-    .visit a{
+    .visit a {
         font-size: 16px;
     }
 
     .visit {
         margin-bottom: -6px;
     }
+
+    /* skills */
+    #skills {
+        justify-content: space-evenly;
+        margin: 25px;
+    }
+
+    #skills .card {
+        width: 200px;
+    }
+
+    #skills .card-title {
+        font-size: 15px;
+    }
+
+    #skills img {
+        height: 90px;
+        width: 90px;
+        margin: 0px auto;
+    }
+
+    #skills .js img {
+        height: 80px;
+        width: 80px;
+        margin-top: 12px;
+        border-radius: 0px;
+    }
+
+    #skills .database img {
+        height: 75px;
+        width: 75px;
+        margin-top: 16px;
+    }
+
+    /* projects */
+    #projects {
+        flex-direction: column-reverse;
+    }
+
+    .pro-greet,
+    .project-img {
+        width: 100%;
+    }
+
+    .pro-greet h1 {
+        margin-top: 0;
+    }
+
+    .project-img {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .project-img img {
+        width: 90%;
+        margin: 10px;
+    }
+
+    .project-card .pro {
+        width: 90%;
+    }
+
+    /* contact */
+    #contact {
+        margin: 15px;
+    }
+
+    .contact-img img {
+        height: 55%;
+    }
+
+    .contact-me {
+        font-size: 30px;
+    }
+
+    .contact-detail p {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .contact-detail .social-media {
+        margin-top: 0px;
+    }
+
+    .contact-detail .social-media img {
+        height: 32px;
+        width: 32px;
+        margin-bottom: 8px;
+    }
+
+    #address {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .adr-title {
+        font-size: 28px;
+    }
+
+    .adr {
+        font-size: 20px;
+    }
+
+    .map a {
+        font-size: 15px;
+        margin-top: 20px;
+    }
+
+    footer {
+        margin-top: 60px;
+    }
 }
 
 @media (max-width: 478px) {
-    header {
+    .navbar {
         margin: 0px 12px;
         font-size: 15px;
+    }
+
+    .logo span {
+        font-size: 16px;
     }
 
     #home {
@@ -949,7 +1204,8 @@ footer span {
         align-items: center;
     }
 
-    .greet, .greet-img {    
+    .greet,
+    .greet-img {
         width: 100%;
         margin: auto;
     }
@@ -959,15 +1215,15 @@ footer span {
         width: 100%;
         margin: -60px auto;
     }
-    
+
     .greet .name {
         font-size: 32px;
     }
-    
+
     .greet .post {
         font-size: 22px;
     }
-    
+
     .greet .about {
         font-size: 20px;
     }
@@ -981,6 +1237,10 @@ footer span {
     .repo {
         margin-top: 24px;
         font-size: 16px;
+    }
+
+    #work {
+        margin-top: 100px;
     }
 
     .work-detail {
@@ -1003,7 +1263,7 @@ footer span {
 
     #work .work-title {
         font-size: 30px;
-        margin-top: -60px;
+        margin-top: -10px;
     }
 
     .work-info .dsgn {
@@ -1023,7 +1283,7 @@ footer span {
         font-size: 36px;
         margin: 12px;
     }
-    
+
     .tech-icon img {
         height: 36px;
         width: 36px;
@@ -1075,22 +1335,126 @@ footer span {
         font-size: 11px;
     }
 
-    .visit a{
+    .visit a {
         font-size: 12px;
     }
 
     .visit {
         margin-bottom: -6px;
     }
+
+    /* skills */
+    #skills {
+        margin: 25px;
+    }
+
+    #skills .card {
+        width: 180px;
+    }
+
+    #skills .card-title {
+        font-size: 15px;
+    }
+
+    /* projects */
+    #projects {
+        margin: 24px;
+    }
+
+    .project-img {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .project-img img {
+        width: 90%;
+        margin: 10px;
+    }
+
+    .pro-greet h1 {
+        font-size: 36px;
+    }
+
+    .project-card {
+        margin: 0;
+    }
+
+    .project-card .pro {
+        padding: 10px;
+    }
+
+    .pro-title {
+        font-size: 20px;
+    }
+
+    .discription {
+        font-size: 15px;
+    }
+
+    /* contact */
+    #contact, #address {
+        flex-direction: column;
+    }
+
+    .contact-img, .contact-detail {
+        width: 100%;
+        height: 300px;
+    }
+
+    .contact-img img {
+        height: 100%;
+        margin-top: 0;
+    }
+
+    .contact-me {
+        font-size: 36px;
+    }
+
+    .contact-detail p {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .contact-detail .social-media img {
+        height: 40px;
+        width: 40px;
+        margin-bottom: 8px;
+    }
+
+    #address {
+        margin-top: 100px;
+    }
+
+    .map, .address-img {
+        width: 100%;
+    }
+
+    .adr-title {
+        font-size: 32px;
+    }
+
+    .map a {
+        font-size: 15px;
+        margin-top: 20px;
+    }
+
+    .address-img {
+        margin-top: 40px;
+    }
 }
 
 @media (max-width: 348px) {
-    header {
+    .navbar {
+        margin: 0px 12px;
+    }
+
+    section {
         margin: 0px 12px;
     }
 
     .logo span {
         font-size: 12px;
+        margin: 8px;
     }
 
     #home {
@@ -1098,26 +1462,28 @@ footer span {
         flex-direction: column;
     }
 
-    .greet, .greet-img {
+    .greet,
+    .greet-img {
         width: 100%;
         text-align: center;
         margin: auto;
     }
 
     .greet-img img {
-        height: 550px;
+        height: 250px;
         width: 100%;
-        margin: -80px auto;
+        margin-top: 0px;
+        padding: 0px;
     }
-    
+
     .greet .name {
         font-size: 26px;
     }
-    
+
     .greet .post {
         font-size: 18px;
     }
-    
+
     .greet .about {
         font-size: 16px;
     }
@@ -1126,6 +1492,7 @@ footer span {
         height: 32px;
         width: 32px;
         margin-right: 6px;
+        margin-bottom: 6px;
     }
 
     .repo {
@@ -1142,23 +1509,31 @@ footer span {
 
     .work-img {
         width: 100%;
-        margin-top: -180px;
+    }
+
+    .work-img img {
+        height: 300px;
+        margin-top: 100px;
     }
 
     .work-info {
         margin-top: 120px;
         width: 100%;
-        padding: 16px;
+        padding: 8px;
     }
 
     #work .work-title {
         font-size: 26px;
-        margin-top: -60px;
+        margin-top: -10px;
     }
 
     .work-info .dsgn {
-        font-size: 20px;
+        font-size: 24px;
         align-self: center;
+    }
+
+    .work-info ul {
+        text-align: left;
     }
 
     .work-info li {
@@ -1173,7 +1548,7 @@ footer span {
         font-size: 28px;
         margin: 12px;
     }
-    
+
     .tech-icon img {
         height: 28px;
         width: 28px;
@@ -1181,7 +1556,9 @@ footer span {
     }
 
     footer {
-        font-size: 16px;
+        font-size: 15px;
+        padding: 0px 8px;
+        margin-top: 20px;
     }
 
     /* education */
@@ -1225,11 +1602,109 @@ footer span {
         font-size: 10px;
     }
 
-    .visit a{
+    .visit a {
         font-size: 10px;
     }
 
     .visit {
         margin-bottom: -6px;
+    }
+
+    /* skills */
+    #skills {
+        margin: 20px;
+    }
+
+    #skills .card-title {
+        font-size: 15px;
+    }
+
+    #skills .card-body {
+        padding: 0px;
+    }
+
+    #skills .card {
+        width: 140px;
+    }
+
+    #skills img {
+        height: 60px;
+        width: 60px;
+    }
+
+    #skills .js img {
+        height: 50px;
+        width: 50px;
+    }
+
+    #skills .database img {
+        height: 50px;
+        width: 50px;
+        margin-top: 10px;
+    }
+
+    /* projects */
+    #projects {
+        margin: 16px;
+    }
+
+    .pro-greet p {
+        margin: 16px 0;
+    }
+
+    .project-card {
+        margin-top: 40px;
+    }
+
+    .project-card .pro {
+        padding: 10px;
+    }
+
+    .pro-title {
+        font-size: 20px;
+    }
+
+    .discription {
+        font-size: 15px;
+    }
+
+    /* contact */
+    .contact-img, .contact-detail {
+        width: 100%;
+        height: 300px;
+    }
+
+    .contact-img img {
+        height: 80%;
+    }
+
+    .contact-me {
+        font-size: 32px;
+    }
+
+    .contact-detail p {
+        font-size: 18px;
+        margin-top: 6px;
+    }
+
+    .contact-detail .social-media img {
+        height: 30px;
+        width: 30px;
+    }
+
+    #address {
+        margin-top: 120px;
+    }
+
+    .adr-title {
+        font-size: 28px;
+    }
+
+    .map a {
+        font-size: 13px;
+    }
+
+    footer {
+        margin-top: 40px;
     }
 }
