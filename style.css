@@ -35,6 +35,7 @@ body {
 .navbar-toggler {
     padding: 4px 6px;
 }
+
 section {
     margin: 48px;
 }
@@ -50,6 +51,7 @@ section {
     color: rgb(0, 28, 85);
 }
 
+/* home section */
 .greet {
     width: 50%;
     padding: 20px;
@@ -107,6 +109,7 @@ section {
     transform: scale(1.02);
 }
 
+/* work section */
 .work-detail {
     display: flex;
 }
@@ -181,6 +184,7 @@ footer span {
     color: red;
 }
 
+/* education */
 .edu-img {
     width: 50%;
 }
@@ -188,7 +192,6 @@ footer span {
 .edu-img img {
     height: 600px;
     width: 100%;
-    margin-left: -30px;
 }
 
 .degree,
@@ -243,6 +246,7 @@ footer span {
     margin-top: -12px;
 }
 
+/* skills */
 #skills {
     margin: 60px;
     justify-content: space-between;
@@ -363,11 +367,6 @@ footer span {
 }
 
 /* contact */
-#contact {
-    /* align-items: center;
-    justify-content: center; */
-}
-
 .contact-img {
     width: 50%;
     text-align: center;
@@ -449,6 +448,7 @@ footer span {
 
 
 @media (max-width: 1148px) {
+    /* home section */
     .greet-img img {
         height: 95%;
         width: 100%;
@@ -472,6 +472,7 @@ footer span {
         margin-right: 10px;
     }
 
+    /* work section */
     .work-info {
         display: flex;
         flex-direction: column;
@@ -582,6 +583,7 @@ footer span {
         margin: 0px;
     }
 
+    /* home section */
     #home {
         margin-top: 32px;
     }
@@ -619,6 +621,7 @@ footer span {
         font-size: 18px;
     }
 
+    /* work section */
     #work {
         margin-bottom: -50px;
     }
@@ -662,7 +665,7 @@ footer span {
         margin: 12px;
     }
 
-    /* education */
+    /* education section*/
     .edu-img img {
         height: 480px;
     }
@@ -693,7 +696,7 @@ footer span {
         padding: 4px 8px;
     }
 
-    /* skills */
+    /* skills section*/
     #skills .card {
         width: 270px;
     }
@@ -719,7 +722,7 @@ footer span {
         margin-top: 16px;
     }
 
-    /* projects */
+    /* projects section*/
     .project-card {
         margin: 100px 16px 0px;
     }
@@ -728,7 +731,7 @@ footer span {
         padding: 16px;
     }
 
-    /* contact */
+    /* contact section*/
     .contact-img img {
         height: 55%;
     }
@@ -761,6 +764,7 @@ footer span {
         margin: 24px;
     }
 
+    /* home section */
     #home {
         margin-top: 24px;
     }
@@ -794,6 +798,7 @@ footer span {
         font-size: 16px;
     }
 
+    /* work section */
     #work {
         margin-bottom: -80px;
     }
@@ -836,11 +841,10 @@ footer span {
         margin: 10px;
     }
 
-    /* education */
+    /* education section*/
     .edu-img img {
         height: 400px;
         width: 400px;
-        margin-left: -70px;
     }
 
     .edu-info {
@@ -872,7 +876,7 @@ footer span {
         margin-bottom: -8px;
     }
 
-    /* skills */
+    /* skills section*/
     #skills .card {
         width: 240px;
     }
@@ -893,7 +897,7 @@ footer span {
         width: 110px;
     }
 
-    /* projects */
+    /* projects section*/
     .project-card {
         margin: 80px 16px 0px;
     }
@@ -902,7 +906,7 @@ footer span {
         padding: 16px;
     }
 
-    /* contact */
+    /* contact section*/
     .contact-img, .contact-detail {
         height: 400px;
     }
@@ -943,6 +947,7 @@ footer span {
         margin: 30px;
     }
 
+    /* home section */
     #home {
         margin-top: 24px;
         flex-direction: column;
@@ -984,6 +989,7 @@ footer span {
         font-size: 18px;
     }
 
+    /* work section */
     #work {
         text-align: center;
     }
@@ -1035,10 +1041,9 @@ footer span {
         margin: 12px;
     }
 
-    /* education */
+    /* education section */
     #education {
         flex-direction: column;
-        margin-right: 0px;
         margin-top: 20px;
     }
 
@@ -1049,13 +1054,11 @@ footer span {
 
     .edu-info {
         width: 100%;
-        margin-left: -10px;
     }
 
     .edu-img img {
         height: 500px;
         width: 500px;
-        margin: auto;
     }
 
     .institute {
@@ -1083,7 +1086,7 @@ footer span {
         margin-bottom: -6px;
     }
 
-    /* skills */
+    /* skills section */
     #skills {
         justify-content: space-evenly;
         margin: 25px;
@@ -1116,7 +1119,7 @@ footer span {
         margin-top: 16px;
     }
 
-    /* projects */
+    /* projects section */
     #projects {
         flex-direction: column-reverse;
     }
@@ -1144,7 +1147,7 @@ footer span {
         width: 90%;
     }
 
-    /* contact */
+    /* contact section */
     #contact {
         margin: 15px;
     }
@@ -1205,6 +1208,7 @@ footer span {
         font-size: 16px;
     }
 
+    /* home section */
     #home {
         margin-top: 24px;
         flex-direction: column;
@@ -1247,6 +1251,7 @@ footer span {
         font-size: 16px;
     }
 
+    /* work section */
     #work {
         margin-top: 100px;
     }
@@ -1298,32 +1303,29 @@ footer span {
         margin: 12px;
     }
 
+    /* footer section */
     footer {
         font-size: 20px;
     }
 
-    /* education */
+    /* education section */
     #education {
         flex-direction: column;
-        margin-right: 0px;
         margin-top: 20px;
     }
 
     .edu-img {
         width: 100%;
         text-align: center;
-        margin-left: -20px;
     }
 
     .edu-info {
         width: 100%;
-        margin-left: -20px;
     }
 
     .edu-img img {
         height: 350px;
         width: 350px;
-        margin: auto;
     }
 
     .institute {
@@ -1351,7 +1353,7 @@ footer span {
         margin-bottom: -6px;
     }
 
-    /* skills */
+    /* skills section */
     #skills {
         margin: 25px;
     }
@@ -1364,7 +1366,7 @@ footer span {
         font-size: 15px;
     }
 
-    /* projects */
+    /* projects section */
     #projects {
         margin: 24px;
     }
@@ -1399,7 +1401,7 @@ footer span {
         font-size: 15px;
     }
 
-    /* contact */
+    /* contact section */
     #contact, #address {
         flex-direction: column;
     }
@@ -1459,7 +1461,7 @@ footer span {
     .navbar-toggler {
         padding: 2px 4px;
     }
-    
+
     .navbar-toggler-icon {
         height: 24px;
         width: 24px;
@@ -1474,6 +1476,7 @@ footer span {
         margin: 8px;
     }
 
+    /* home section */
     #home {
         margin-top: 24px;
         flex-direction: column;
@@ -1517,6 +1520,7 @@ footer span {
         font-size: 14px;
     }
 
+    /* work section */
     .work-detail {
         margin-bottom: -100px;
         display: flex;
@@ -1572,34 +1576,31 @@ footer span {
         margin: 12px;
     }
 
+    /* footer section */
     footer {
         font-size: 15px;
         padding: 0px 8px;
         margin-top: 20px;
     }
 
-    /* education */
+    /* education section */
     #education {
         flex-direction: column;
-        margin-right: 0px;
         margin-top: 20px;
     }
 
     .edu-img {
         width: 100%;
         text-align: center;
-        margin-left: -20px;
     }
 
     .edu-info {
         width: 100%;
-        margin-left: -20px;
     }
 
     .edu-img img {
         height: 300px;
         width: 300px;
-        margin: auto;
     }
 
     .institute {
@@ -1627,7 +1628,7 @@ footer span {
         margin-bottom: -6px;
     }
 
-    /* skills */
+    /* skills section */
     #skills {
         margin: 20px;
     }
@@ -1660,7 +1661,7 @@ footer span {
         margin-top: 10px;
     }
 
-    /* projects */
+    /* projects section */
     #projects {
         margin: 16px;
     }
@@ -1685,7 +1686,7 @@ footer span {
         font-size: 15px;
     }
 
-    /* contact */
+    /* contact section */
     .contact-img, .contact-detail {
         width: 100%;
         height: 300px;
