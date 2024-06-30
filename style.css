@@ -135,6 +135,8 @@ section {
 
 .work-img {
     width: 50%;
+    text-align: center;
+    margin: auto;
 }
 
 .work-info {
@@ -143,8 +145,8 @@ section {
 }
 
 .work-img img {
-    height: 600px;
-    width: 100%;
+    height: 400px;
+    width: 90%;
 }
 
 .dsgn {
@@ -155,6 +157,7 @@ section {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .tech-icon i {
@@ -221,6 +224,7 @@ footer span {
     font-size: 14px;
     font-weight: 500;
     margin-right: 8px;
+    text-align: right;
 }
 
 .branch {
@@ -375,7 +379,7 @@ footer span {
 }
 
 .contact-img img {
-    height: 75%;
+    height: 70%;
     margin: auto;
     margin-top: 50px;
     border: 2px solid black;
@@ -479,7 +483,6 @@ footer span {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
     }
 
     .dsgn {
@@ -488,10 +491,6 @@ footer span {
 
     .work-info li {
         font-size: 26px;
-    }
-
-    #work .work-title {
-        margin-bottom: -60px;
     }
 
     .tech-icon i {
@@ -550,6 +549,11 @@ footer span {
     }
 
     /* projects */
+    .project-img {
+        text-align: center;
+        margin: auto;
+    }
+
     .project-card {
         margin: 100px 20px 0px;
     }
@@ -629,10 +633,6 @@ footer span {
     }
 
     /* work section */
-    #work {
-        margin-bottom: -50px;
-    }
-
     .work-info {
         padding: 16px;
     }
@@ -640,19 +640,15 @@ footer span {
     .work-info {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
     }
 
     #work .work-title {
-        margin-bottom: -100px;
         font-size: 36px;
         margin-top: 0px;
     }
 
     .work-info .dsgn {
         font-size: 30px;
-        align-self: start;
         margin-left: 12px;
     }
 
@@ -775,77 +771,95 @@ footer span {
     /* home section */
     #home {
         margin-top: 24px;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .greet,
+    .greet-img {
+        width: 100%;
+        text-align: center;
+        margin: auto;
     }
 
     .greet-img img {
         height: 90%;
-        width: 100%;
+        width: 90%;
         margin: 0px 5px;
     }
 
     .greet .name {
-        font-size: 34px;
+        font-size: 44px;
     }
 
     .greet .post {
-        font-size: 18px;
+        font-size: 28px;
     }
 
     .greet .about {
-        font-size: 18px;
+        font-size: 24px;
     }
 
     .social-media img {
-        height: 38px;
-        width: 38px;
-        margin-right: 6px;
+        height: 50px;
+        width: 50px;
+        margin-right: 8px;
     }
 
     .repo {
-        margin-top: 20px;
-        font-size: 16px;
+        margin-top: 40px;
+        font-size: 22px;
     }
 
     /* work section */
-    #work {
-        margin-bottom: -80px;
+    .work-detail {
+        flex-direction: column-reverse;
+        padding: 20px;
+    }
+
+    .work-img, .work-info {
+        width: 100%;
+        text-align: center;
+    }
+
+    .work-img {
+        margin-top: 50px;
+    }
+
+    .work-img img {
+        height: 100%;
+        width: 90%;
+    }
+
+    #work .work-title {
+        font-size: 40px;
     }
 
     .work-info {
         padding: 16px;
-    }
-
-    .work-info {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #work .work-title {
-        margin-bottom: -110px;
-        font-size: 30px;
-        margin-top: 0px;
+        text-align: center;
     }
 
     .work-info .dsgn {
-        font-size: 28px;
-        align-self: start;
-        margin-left: 10px;
+        font-size: 36px;
+        margin-bottom: 10px;
     }
 
+    .work-info ul {
+        margin-top: 10px;
+    }
     .work-info li {
-        font-size: 18px;
+        font-size: 24px;
     }
 
     .tech-icon i {
-        font-size: 40px;
+        font-size: 50px;
         margin: 10px;
     }
 
     .tech-icon img {
-        height: 40px;
-        width: 40px;
+        height: 50px;
+        width: 50px;
         margin: 10px;
     }
 
@@ -920,34 +934,115 @@ footer span {
     }
 
     /* projects section*/
+    #projects {
+        flex-direction: column-reverse;
+    }
+
+    #projects{
+        margin: 30px;
+    }
+
+    .pro-greet,
+    .project-img {
+        width: 100%;
+        text-align: center;
+    }
+
+    .pro-greet p{
+        font-size: 30px;
+    }
+
+    .project-img {
+        margin-top: 40px;
+    }
+
     .project-card {
-        margin: 80px 16px 0px;
+        margin: 80px 30px 0px;
     }
 
     .project-card .pro {
+        width: 100%;
         padding: 16px;
     }
 
+    .pro-title {
+        font-size: 28px;
+    }
+
+    .pro .discription {
+        font-size: 20px;
+    }
+
+    .pro .lang {
+        font-size: 24px;
+    }
+    
+    .pro .lang img {
+        height: 20px;
+        width: 20px;
+    }
+
     /* contact section*/
-    .contact-img, .contact-detail {
+    #contact, #address {
+        flex-direction: column;
+    }
+
+    .contact-img {
+        width: 100%;
         height: 400px;
     }
 
     .contact-img img {
-        height: 75%;
+        height: 100%;
         margin-top: 20px;
     }
 
+    .contact-detail {
+        width: 100%;
+        margin-top: 40px;
+    }
+
     .contact-me {
-        font-size: 40px;
+        font-size: 50px;
     }
 
     .contact-detail p {
-        font-size: 20px;
+        font-size: 30px;
+    }
+
+    .social-media img {
+        height: 64px;
+        width: 64px;
+        margin-right: 8px;
     }
 
     #address {
-        margin-top: 50px;
+        margin-top: 100px;
+    }
+
+    .map, .address-img {
+        width: 100%;
+    }
+
+    .address-img {
+        margin-top: 100px;
+    }
+
+    .adr-title {
+        font-size: 50px;
+    }
+
+    .adr {
+        font-size: 36px;
+    }
+
+    .map a {
+        font-size: 24px;
+    }
+
+    /* footer */
+    footer {
+        margin: 50px auto 0px;
     }
 }
 
@@ -1025,11 +1120,10 @@ footer span {
 
     .work-img img {
         height: 350px;
-        width: 80%;
+        width: 95%;
     }
 
     .work-info {
-        margin-top: 120px;
         width: 100%;
         padding: 16px;
     }
@@ -1142,19 +1236,6 @@ footer span {
     }
 
     /* projects section */
-    #projects {
-        flex-direction: column-reverse;
-    }
-
-    .pro-greet,
-    .project-img {
-        width: 100%;
-    }
-
-    .pro-greet h1 {
-        margin-top: 0;
-    }
-
     .project-img {
         margin-top: 20px;
         text-align: center;
@@ -1169,50 +1250,37 @@ footer span {
         width: 90%;
     }
 
+    .pro-greet p {
+        font-size: 24px;
+    }
+
     /* contact section */
-    #contact {
-        margin: 15px;
+    #contact, #address {
+        margin: 30px;
     }
 
     .contact-img img {
-        height: 55%;
+        height: 90%;
     }
 
     .contact-me {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .contact-detail p {
-        font-size: 16px;
-        margin-top: 10px;
-    }
-
-    .contact-detail .social-media {
-        margin-top: 0px;
-    }
-
-    .contact-detail .social-media img {
-        height: 32px;
-        width: 32px;
-        margin-bottom: 8px;
-    }
-
-    #address {
-        margin: 10px;
-        padding: 10px;
+        font-size: 24px;
     }
 
     .adr-title {
-        font-size: 28px;
+        font-size: 40px;
     }
 
     .adr {
-        font-size: 20px;
+        font-size: 28px;
     }
 
     .map a {
-        font-size: 15px;
-        margin-top: 20px;
+        font-size: 20px;
     }
 
     footer {
@@ -1244,9 +1312,8 @@ footer span {
     }
 
     .greet-img img {
-        height: 550px;
+        height: 350px;
         width: 100%;
-        margin: -60px auto;
     }
 
     .greet .name {
@@ -1264,7 +1331,7 @@ footer span {
     .social-media img {
         height: 40px;
         width: 40px;
-        margin-right: 6px;
+        margin: 0 6px 8px 0;
     }
 
     .repo {
@@ -1273,12 +1340,9 @@ footer span {
     }
 
     /* work section */
-    #work {
-        margin-top: 100px;
-    }
-
     .work-detail {
-        margin-bottom: -100px;
+        height: auto;
+        padding: 10px;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column-reverse;
@@ -1294,9 +1358,9 @@ footer span {
     }
 
     .work-info {
-        margin-top: 120px;
+        margin-top: 0px;
         width: 100%;
-        padding: 16px;
+        padding: 8px;
     }
 
     #work .work-title {
@@ -1381,6 +1445,7 @@ footer span {
     /* skills section */
     #skills {
         margin: 25px;
+        margin-top: 75px;
     }
 
     #skills .card {
@@ -1410,6 +1475,10 @@ footer span {
         font-size: 36px;
     }
 
+    .pro-greet p {
+        font-size: 22px;
+    }
+
     .project-card {
         margin: 0;
     }
@@ -1422,27 +1491,23 @@ footer span {
         font-size: 20px;
     }
 
-    .discription {
-        font-size: 15px;
+    .pro .discription {
+        font-size: 16px;
     }
 
     /* contact section */
-    #contact, #address {
-        flex-direction: column;
-    }
-
-    .contact-img, .contact-detail {
-        width: 100%;
-        height: 300px;
-    }
-
     .contact-img img {
-        height: 100%;
+        height: 75%;
         margin-top: 0;
     }
 
     .contact-me {
         font-size: 36px;
+        margin-top: 0px;
+    }
+
+    .contact-detail {
+        margin-top: 0;
     }
 
     .contact-detail p {
@@ -1457,7 +1522,7 @@ footer span {
     }
 
     #address {
-        margin-top: 100px;
+        margin-top: 70px;
     }
 
     .map, .address-img {
@@ -1468,13 +1533,17 @@ footer span {
         font-size: 32px;
     }
 
+    .adr {
+        font-size: 24px;
+    }
+
     .map a {
-        font-size: 15px;
+        font-size: 14px;
         margin-top: 20px;
     }
 
     .address-img {
-        margin-top: 40px;
+        margin-top: 60px;
     }
 }
 
@@ -1518,8 +1587,12 @@ footer span {
         margin: auto;
     }
 
+    .greet-img {
+        margin: 20px auto;
+    }
+
     .greet-img img {
-        height: 250px;
+        height: 300px;
         width: 100%;
         margin-top: 0px;
         padding: 0px;
@@ -1568,14 +1641,12 @@ footer span {
     }
 
     .work-info {
-        margin-top: 120px;
         width: 100%;
         padding: 8px;
     }
 
     #work .work-title {
         font-size: 26px;
-        margin-top: -10px;
     }
 
     .work-info .dsgn {
@@ -1647,6 +1718,7 @@ footer span {
     /* skills section */
     #skills {
         margin: 20px;
+        margin-top: 50px;
     }
 
     #skills .card-title {
