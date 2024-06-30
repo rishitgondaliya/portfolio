@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
     // Initialize AOS with your desired configuration
     AOS.init({
         duration: 1500,
@@ -17,21 +17,25 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Event listener for navbar toggler
-    const navbarToggler = document.querySelector('.navbar-collapse');
-    const mainContent = document.querySelector('#mainContent');
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const mainContent = document.querySelector('#main-content');
+    const navbarCollapse = document.querySelector('#navbarNavAltMarkup');
 
-    if (navbarToggler && mainContent) {
-        navbarToggler.addEventListener('click', function () {
-            const navbarCollapse = document.querySelector('.navbar-collapse');
-            const isVisible = navbarCollapse.classList.contains('show');
-
-            if (isVisible) {
-                mainContent.style.paddingTop = '80px'; 
-            } else {
-                mainContent.style.paddingTop = '0';
-            }
-        });
-    } else {
-        console.error('Navbar toggler or main content element not found.');
+    function adjustMainContentMargin() {
+        const isVisible = navbarCollapse.classList.contains('show');
+        if (isVisible) {
+            const navbarHeight = navbarCollapse.scrollHeight;
+            mainContent.style.marginTop = `${navbarHeight}px`;
+        } else {
+            mainContent.style.marginTop = '0';
+        }
     }
+
+    navbarToggler.addEventListener('click', function() {
+        adjustMainContentMargin();
+    });
+
+    // Listen for collapse events to adjust margin when toggling is done
+    navbarCollapse.addEventListener('shown.bs.collapse', adjustMainContentMargin);
+    navbarCollapse.addEventListener('hidden.bs.collapse', adjustMainContentMargin);
 });
