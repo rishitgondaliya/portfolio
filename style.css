@@ -246,12 +246,6 @@ footer span {
     font-size: 18px;
 }
 
-.visit {
-    display: flex;
-    justify-content: end;
-    margin-top: -12px;
-}
-
 /* skills */
 #skills {
     margin: 60px;
@@ -695,11 +689,6 @@ footer span {
         font-size: 12px;
     }
 
-    .visit a {
-        font-size: 13px;
-        padding: 4px 8px;
-    }
-
     /* skills section*/
     #skills .card {
         width: 270px;
@@ -902,14 +891,6 @@ footer span {
 
     .dur {
         font-size: 16px;
-    }
-
-    .visit a {
-        font-size: 16px;
-    }
-
-    .visit {
-        margin-bottom: -6px;
     }
 
     /* skills section*/
@@ -1194,14 +1175,6 @@ footer span {
         font-size: 14px;
     }
 
-    .visit a {
-        font-size: 16px;
-    }
-
-    .visit {
-        margin-bottom: -6px;
-    }
-
     /* skills section */
     #skills {
         justify-content: space-evenly;
@@ -1432,14 +1405,6 @@ footer span {
 
     .dur {
         font-size: 11px;
-    }
-
-    .visit a {
-        font-size: 12px;
-    }
-
-    .visit {
-        margin-bottom: -6px;
     }
 
     /* skills section */
@@ -1705,14 +1670,6 @@ footer span {
 
     .dur {
         font-size: 10px;
-    }
-
-    .visit a {
-        font-size: 10px;
-    }
-
-    .visit {
-        margin-bottom: -6px;
     }
 
     /* skills section */
