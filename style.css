@@ -268,16 +268,18 @@ footer span {
 }
 
 #skills .js img {
-    height: 150px;
-    width: 150px;
+    height: 140px;
+    width: 140px;
     margin-top: 24px;
-    border-radius: 0px;
+    margin-bottom: 12px;
+    border-radius: 4px;
 }
 
 #skills .database img {
-    height: 160px;
-    width: 160px;
-    margin-top: 16px;
+    height: 140px;
+    width: 140px;
+    margin-top: 24px;
+    margin-bottom: 12px;
 }
 
 #skills .card-body {
@@ -526,20 +528,22 @@ footer span {
         width: 160px;
     }
 
+    #skills .bootstrap img, #skills .tailwind img, #skills .node img {
+        height: 100px;
+        width: 100px;
+    }
     #skills .js img {
         height: 130px;
         width: 130px;
         margin-top: 20px;
-    }
-
-    .js .card-title {
-        margin: 8px;
+        margin-bottom: 8px;
     }
 
     #skills .database img {
         height: 140px;
         width: 140px;
         margin-top: 16px;
+        margin-bottom: 8px;
     }
 
     /* projects */
