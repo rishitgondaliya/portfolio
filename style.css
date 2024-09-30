@@ -282,6 +282,13 @@ footer span {
     margin-bottom: 12px;
 }
 
+#skills .appwrite img {
+    height: 80px;
+    width: 220px;
+    margin-top: 48px;
+    margin-bottom: 12px;
+}
+
 #skills .card-body {
     padding: 6px;
 }
@@ -544,6 +551,13 @@ footer span {
         width: 140px;
         margin-top: 16px;
         margin-bottom: 8px;
+    }
+
+    #skills .appwrite img {
+        height: 70px;
+        width: 200px;
+        margin-top: 48px;
+        margin-bottom: 12px;
     }
 
     /* projects */
@@ -916,6 +930,13 @@ footer span {
     #skills .database img {
         height: 110px;
         width: 110px;
+    }
+
+    #skills .appwrite img {
+        height: 50px;
+        width: 160px;
+        margin-top: 32px;
+        margin-bottom: 12px;
     }
 
     /* projects section*/
