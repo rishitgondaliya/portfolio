@@ -283,11 +283,12 @@ footer span {
     margin-bottom: 12px;
 }
 
-#skills .appwrite img {
-    height: 80px;
-    width: 220px;
+#skills .nextjs img {
+    height: 100px;
+    width: 250px;
     margin-top: 48px;
     margin-bottom: 12px;
+    transform: scale(2.5);
 }
 
 #skills .card-body {
@@ -610,11 +611,12 @@ footer span {
         margin-bottom: 8px;
     }
 
-    #skills .appwrite img {
-        height: 70px;
-        width: 200px;
+    #skills .nextjs img {
+        height: 90%;
+        width: 90%;
         margin-top: 48px;
         margin-bottom: 12px;
+    transform: scale(2.5);
     }
 
     /* projects */
@@ -989,11 +991,12 @@ footer span {
         width: 110px;
     }
 
-    #skills .appwrite img {
+    #skills .nextjs img {
         height: 50px;
         width: 160px;
         margin-top: 32px;
         margin-bottom: 12px;
+    transform: scale(2.5);
     }
 
     /* projects section*/
