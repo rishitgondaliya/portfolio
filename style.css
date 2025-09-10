@@ -46,6 +46,7 @@ section {
 #skills,
 #contact,
 #projects,
+#experience,
 #address {
     display: flex;
     flex-wrap: wrap;
@@ -373,6 +374,62 @@ footer span {
 .more a {
     font-size: 20px;
     margin: 16px;
+}
+
+/* experience */
+.exp-img {
+    width: 50%;
+    text-align: center;
+}
+
+.exp-img img {
+    margin-top: 3rem;
+    width: 80%;
+}
+
+.company {
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 5px 5px 5px #d9dbdf;
+    padding-bottom: 4px;
+}
+
+.title {
+    color: rgb(0, 28, 85);
+    background-color: rgba(14, 107, 168, 0.467);
+    font-size: 22px;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dur {
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 8px;
+    text-align: right;
+}
+
+.position {
+    font-size: 17px;
+    margin-top: 8px;
+}
+
+.exp-info {
+    width: 50%;
+    padding: 32px;
+}
+
+.exp-detail {
+    margin: 16px;
+}
+
+.exp-detail ul li {
+    margin-bottom: 8px;
+    font-size: 18px;
 }
 
 /* contact */
